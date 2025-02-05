@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="shortcut icon" href="favicon.svg">
+  
+</head>
+<body>
+             <!-- main -->
+    <div class="container flex justify-content align-center bg-black">
+                <!-- left -->
+        <div class="left">
+          <div class="close">
+            <img class="invert" src="close.svg" alt="">
+          </div>
+            
+               <!-- home icon part  -->
+            <div class="home bg-grey rounded margin padding">
+                <div class="logo margin"> 
+                  <img class="invert" src="logo.svg" alt=""> 
+                  <h2>Spotify</h2>
+                   
+                </div>
+                <ul>
+                    <li><img  class="invert" src="home.svg" alt="img not found">Home</li>
+                    <li><img class="invert" src="search.svg" alt="img not found">Search</li>
+                </ul>
+            </div>
+              
+            <!-- library part  -->
+            <div class="library bg-grey rounded margin padding">
+               <div class="heading invert">
+                <img src="library.svg" alt="">
+                <h2 class="invert">Your Library</h2></div> 
+          
+                <div class="songlist">
+                  
+                  <ul>
+               
+                </ul> 
+              </div>
+             <!-- footer  -->
+            <div class="footer">
+                <div data-testid="left-sidebar-footer">
+                    <div data-testid="left-sidebar-legal-links">
+                      <div>
+                        <div>
+                          <a href="https://www.spotify.com/in-en/legal/" data-encore-id="textLink">
+                            <span data-encore-id="type">Legal</span>
+                          </a>
+                        </div>
+                        <div>
+                          <a href="https://www.spotify.com/in-en/safetyandprivacy/" data-encore-id="textLink">
+                            <span data-encore-id="type">Safety &amp; Privacy Center</span>
+                          </a>
+                        </div>
+                        <div>
+                          <a href="https://www.spotify.com/in-en/legal/privacy-policy/" data-encore-id="textLink">
+                            <span data-encore-id="type">Privacy Policy</span>
+                          </a>
+                        </div>
+                        <div>
+                          <a href="https://www.spotify.com/in-en/legal/cookies-policy/" data-encore-id="textLink">
+                            <span data-encore-id="type">Cookies</span>
+                          </a>
+                        </div>
+                        <div>
+                          <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" data-encore-id="textLink">
+                            <span data-encore-id="type">About Ads</span>
+                          </a>
+                        </div>
+                        <div>
+                          <a href="https://www.spotify.com/in-en/accessibility/" data-encore-id="textLink">
+                            <span data-encore-id="type">Accessibility</span>
+                          </a>
+                        </div>
+                      </div>
+                      <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener">
+                        <span data-encore-id="text">Cookies</span>
+                      </a>
+                    </div>
+                    <div>
+                      <button data-testid="language-selection-button" data-encore-id="buttonSecondary">
+                        <span aria-hidden="true">
+                          <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16">
+                            <path d="M8.152 16H8a8 8 0 1 1 .152 0zm-.41-14.202c-.226.273-.463.713-.677 1.323-.369 1.055-.626 2.496-.687 4.129h3.547c-.06-1.633-.318-3.074-.687-4.129-.213-.61-.45-1.05-.676-1.323-.194-.235-.326-.285-.385-.296h-.044c-.055.007-.19.052-.391.296zM4.877 7.25c.062-1.771.34-3.386.773-4.624.099-.284.208-.554.329-.806a6.507 6.507 0 0 0-4.436 5.43h3.334zm-3.334 1.5a6.507 6.507 0 0 0 4.436 5.43 7.974 7.974 0 0 1-.33-.806c-.433-1.238-.71-2.853-.772-4.624H1.543zm4.835 0c.061 1.633.318 3.074.687 4.129.214.61.451 1.05.677 1.323.202.244.336.29.391.297l.044-.001c.06-.01.19-.061.385-.296.226-.273.463-.713.676-1.323.37-1.055.626-2.496.687-4.129H6.378zm5.048 0c-.061 1.771-.339 3.386-.772 4.624-.082.235-.171.46-.268.674a6.506 6.506 0 0 0 4.071-5.298h-3.03zm3.031-1.5a6.507 6.507 0 0 0-4.071-5.298c.097.214.186.44.268.674.433 1.238.711 2.853.772 4.624h3.031z"></path>
+                          </svg>
+                        </span>English
+                      </button>
+                    </div>
+                  </div>
+                  
+            </div>
+        </div>
+    </div>
+
+
+
+    
+          <!-- right  -->
+        <div class="right bg-grey">
+            <!-- header of right  -->
+        <div class="header">
+           <div class="nav">
+            <div class="hamburgericon">
+
+            <img class="hamburger invert" width="40px" src="hamburger.svg" alt="">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <path d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="currentColor" stroke-width="1.5" />
+                    <path d="M14 7C14 7 10 10.6824 10 12C9.99999 13.3176 14 17 14 17" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <path d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="currentColor" stroke-width="1.5" />
+                    <path d="M10 7C10 7 14 10.6824 14 12C14 13.3176 10 17 10 17" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+          </div>
+            <div class="buttons">
+                <button class="b-1">Signup</button>
+                <button class="b-2">Log in</button>
+            </div>
+        </div>
+             
+        <!-- playlist  -->
+        <div class="playlist">
+            <h1>Spotify Playlists</h1>
+            <div class="cardcontainer">
+                <!-- card-1  -->
+                <div data-folder="ncs" class="card">
+                  <div class="play">
+                    <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="25" cy="25" r="25" fill="green" />
+                      <path d="M20 4L19 12L5 20Z" stroke="black" stroke-width="2" stroke-linejoin="round" transform="translate(12, 12)"/>
+                  </svg>
+               </div>
+               <img src="Glory - Yo Yo Honey Singh [24BIT_48kHz] (T-Series) [2024-DIGITALRip-WAV].jpg" alt="">
+               
+               <h1>GLORY</h1>
+               <p>Yo Yo Honey Singh</p>
+                </div>
+                  
+               
+                   <!-- card-3  -->
+                   <div  data-folder="Atif3" class="card">
+                    <div class="play">
+                      <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="25" cy="25" r="25" fill="green" />
+                        <path d="M20 4L19 12L5 20Z" stroke="black" stroke-width="2" stroke-linejoin="round" transform="translate(12, 12)"/>
+                    </svg>
+                 </div>
+                    <img src="card3.jpg" alt="">
+                    
+                    <h1>Jeene Laga Hu</h1>
+                    <p>Atif Aslam</p>
+                     </div>
+
+                     <!-- card-4  -->
+                     <div  data-folder="Shreya4" class="card">
+                      <div class="play">
+                        <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="25" cy="25" r="25" fill="green" />
+                          <path d="M20 4L19 12L5 20Z" stroke="black" stroke-width="2" stroke-linejoin="round" transform="translate(12, 12)"/>
+                      </svg>
+                   </div>
+                      <img src="card4.jpg" alt="">
+                      
+                      <h1>Angaron</h1>
+                      <p>Shreya Ghoshal</p>
+                       </div>
+
+
+                       <!-- card-5  -->
+                       <div data-folder="Rehman5" class="card">
+                        <div class="play">
+                          <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="25" cy="25" r="25" fill="green" />
+                            <path d="M20 4L19 12L5 20Z" stroke="black" stroke-width="2" stroke-linejoin="round" transform="translate(12, 12)"/>
+                        </svg>
+                     </div>
+                        <img src="card5.jpg" alt="">
+                        
+                        <h1>Kun Faya Kun</h1>
+                        <p>A. R. Rehman</p>
+                         </div>
+                 
+                         <!-- card-6  -->
+                         <div data-folder="Mahadev6" class="card">
+                          <div class="play">
+                            <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                  <circle cx="25" cy="25" r="25" fill="green" />
+                              <path d="M20 4L19 12L5 20Z" stroke="black" stroke-width="2" stroke-linejoin="round" transform="translate(12, 12)"/>
+                          </svg>
+                       </div>
+                          <img src="card6.jpg" alt="">
+                          
+                          <h1>Desi Girl</h1>
+                          <p>Shanker Mahadevan</p>
+                           </div>
+
+                           <!-- card-7  -->
+                           <div data-folder="Dhwani7" class="card">
+                            <div class="play">
+                              <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="25" cy="25" r="25" fill="green" />
+                                <path d="M20 4L19 12L5 20Z" stroke="black" stroke-width="2" stroke-linejoin="round" transform="translate(12, 12)"/>
+                            </svg>
+                         </div>
+                            <img src="card7.jpg" alt="">
+                            
+                            <h1>Dilber</h1>
+                            <p>Dhwani Bhanushali</p>
+                             </div>
+                       
+                             <!-- card-8  -->
+                             <div data-folder="ncs" class="card">
+                              <div class="play">
+                                <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="25" cy="25" r="25" fill="green" />
+                                  <path d="M20 4L19 12L5 20Z" stroke="black" stroke-width="2" stroke-linejoin="round" transform="translate(12, 12)"/>
+                              </svg>
+                           </div>
+                              <img src="card8.jpg" alt="">
+                              
+                              <h1>GLORY</h1>
+                              <p>Yo Yo Honey Singh</p>
+                               </div>
+
+                               <!-- card-9  -->
+                               <div data-folder="Shreya4" class="card">
+                                <div class="play">
+                                  <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="25" cy="25" r="25" fill="green" />
+                                    <path d="M20 4L19 12L5 20Z" stroke="black" stroke-width="2" stroke-linejoin="round" transform="translate(12, 12)"/>
+                                </svg>
+                             </div>
+                                <img src="card9.jpg" alt="">
+                                
+                                <h1>Angaron</h1>
+                                <p>Shreya Ghoshal</p>
+                                 </div>
+                            </div>
+                <div class="playbar invert">
+                  <div class="seekbar">
+                    <div class="circle">
+                      
+                    </div>
+                  </div>
+                 
+                  <div class="bar">
+
+                    <div class="one">
+                    <div class="songinfo"> </div> </div>
+
+                    
+                    
+                    <div class="buttonsong">
+                      <img width="40px"  class="size" id="previous" src="icons8-previous-50.png" alt="">
+                      <img width="40px" id="play" src="play.svg" alt="">
+                      <img width="40px" id="next" class="size" src="icons8-next-50.png" alt="">
+                    </div>
+                    <div class="timevol">
+                    
+                    <div class="one">
+                    <div class="songtime"></div>
+                        
+                    </div>
+                  </div>
+                     
+                  </div>
+                  </div>
+          </div>
+         </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
+
+
