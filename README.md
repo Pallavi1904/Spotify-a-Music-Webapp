@@ -13,6 +13,18 @@ This project plays songs, displays a song list, and provides basic audio control
 - 📃 Dynamic song list with clickable items
 - 💡 Responsive design
 
+
+---
+
+## 📸 Preview   
+
+  
+![Home Screenshot](Outputs/ss1.png)  
+
+---
+
+![About Screenshot](Outputs/ss2.png)  
+
 ---
 
 ## 🛠️ Tech Stack
